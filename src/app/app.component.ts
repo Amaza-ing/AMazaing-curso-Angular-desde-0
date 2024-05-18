@@ -9,5 +9,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  userName: string = "Adrián";
+  userName: string;
+
+  constructor() {
+    this.userName = "Adrián";
+  }
 }
