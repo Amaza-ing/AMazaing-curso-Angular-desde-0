@@ -1,4 +1,6 @@
 <h1>ngClass | Clases Dinámicas</h1>
 
-<h2>Hola a todos!</h2>
+<h2 [ngClass]="{dark: isDark, big: true}">Hola a todos!</h2>
+
+<button (click)="toggleDark()">Toggle Dark</button>
 
