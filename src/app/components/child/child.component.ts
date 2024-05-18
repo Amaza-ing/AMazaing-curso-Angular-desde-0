@@ -11,7 +11,7 @@ export class ChildComponent {
   @Output()
   login: EventEmitter<any> = new EventEmitter<any>;
 
-  userName: string = 'Adrián';
+  userName: string = 'Adrián!';
 
   handleLogin() {
     this.login.emit(this.userName);
