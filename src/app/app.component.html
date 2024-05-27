@@ -1,5 +1,17 @@
-<h1>&#64;Output | Comunicación hijo-padre ↑</h1>
+<h1>Reactive Forms</h1>
 
-<h2>Hola {{ name }}</h2>
-
-<app-child (login)="setName($event)"></app-child>
+<form [formGroup]="movieForm" (submit)="handleSubmit()">
+  <fieldset>
+    <label for="movie-name">Movie Name:</label>
+    <input type="text" id="movie-name" formControlName="name">
+  </fieldset>
+  <fieldset>
+    <label for="movie-duration">Movie duration:</label>
+    <input type="number" id="movie-duration" formControlName="duration">
+  </fieldset>
+  <fieldset>
+    <label for="movie-director">Movie director:</label>
+    <input type="text" id="movie-director" formControlName="director">
+  </fieldset>
+  <button>Create Movie</button>
+</form>

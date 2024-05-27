@@ -1,18 +1,33 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
-import { ChildComponent } from './components/child/child.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ChildComponent],
+  imports: [RouterOutlet, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  name: string = "";
+  movieForm: FormGroup;
+  name: FormControl;
+  duration: FormControl;
+  director: FormControl;
 
-  setName(e: any) {
-    this.name = e;
+  constructor() {
+    this.name = new FormControl('');
+    this.duration = new FormControl('');
+    this.director = new FormControl('');
+
+    this.movieForm = new FormGroup({
+      name: this.name,
+      duration: this.duration,
+      director: this.director,
+    });
+  }
+
+  handleSubmit(): void {
+    console.log("Movie created:", this.movieForm.value);    
   }
 }
