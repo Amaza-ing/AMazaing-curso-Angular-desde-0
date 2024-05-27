@@ -5,7 +5,7 @@ import Product from '../models/Product';
   providedIn: 'root',
 })
 export class ProductService {
-  private product: Product;
+  product: Product;
 
   constructor() {
     this.product = {
