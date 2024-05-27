@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import product from '../models/Product';
+import Product from '../models/Product';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProductService {
-  product: product;
+  private product: Product;
 
   constructor() {
     this.product = {
