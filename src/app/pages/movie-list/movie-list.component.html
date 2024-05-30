@@ -1,3 +1,14 @@
 <app-header></app-header>
 
-<p>movie-list</p>
+<p>Movies:</p>
+
+<ul class="movie-list">
+  @for (movie of movieService.movies; track $index) {
+  <li class="movie-item">
+    <h2>{{ $index + 1 }}</h2>
+    <h2>{{ movie.name }}</h2>
+    <h3>{{ movie.duration }} mins</h3>
+    <h3>{{ movie.director }}</h3>
+  </li>
+  }
+</ul>
