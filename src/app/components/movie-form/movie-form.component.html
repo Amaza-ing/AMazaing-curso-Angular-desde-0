@@ -1,0 +1,25 @@
+<h1>Movie Form</h1>
+
+<form [formGroup]="movieForm" (submit)="handleSubmit()">
+  <fieldset>
+    <label for="movie-name">*Movie Name:</label>
+    <input type="text" id="movie-name" formControlName="name" />
+    @if (name.invalid && name.touched) {
+    <p class="form-error">Name is required</p>
+    }
+  </fieldset>
+  <fieldset>
+    <label for="movie-duration">*Movie duration:</label>
+    <input type="number" id="movie-duration" formControlName="duration" />
+    @if (duration.hasError("required") && duration.touched) {
+    <p class="form-error">Duration is required</p>
+    } @else if (duration.hasError("max") && duration.touched) {
+    <p class="form-error">Movie cannot be that long</p>
+    }
+  </fieldset>
+  <fieldset>
+    <label for="movie-director">Movie director:</label>
+    <input type="text" id="movie-director" formControlName="director" />
+  </fieldset>
+  <button [disabled]="movieForm.invalid">Create Movie</button>
+</form>

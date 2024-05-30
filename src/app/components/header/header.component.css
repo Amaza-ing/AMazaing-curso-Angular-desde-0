@@ -1,0 +1,16 @@
+.header {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+
+    .link {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
