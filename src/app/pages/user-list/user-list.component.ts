@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { HeaderComponent } from '../../components/header/header.component';
 import { RouterLink } from '@angular/router';
@@ -10,6 +10,22 @@ import { RouterLink } from '@angular/router';
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.css',
 })
-export class UserListComponent {
+export class UserListComponent implements OnInit {
   constructor(public userService: UserService) {}
+
+  ngOnInit(): void {
+    this.getUsers();    
+  }
+
+  getUsers() {
+    this.userService.getUsers().subscribe({
+      next: (data) => {
+        console.log(data);
+        this.userService.users = data;        
+      },
+      error: (e) => {
+        console.log(e);        
+      }
+    })
+  }
 }

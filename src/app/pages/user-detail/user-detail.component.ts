@@ -20,7 +20,19 @@ export class UserDetailComponent {
 
   ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
-    this.selectedUser = this.userService.getUser(id);
+    this.getUser(id);
+  }
+
+  getUser(id: string) {
+    this.userService.getUser(id).subscribe({
+      next: (data) => {
+        console.log(data);
+        this.selectedUser = data;       
+      },
+      error: (e) => {
+        console.log(e);        
+      }
+    })
   }
 
 }
