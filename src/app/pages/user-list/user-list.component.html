@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<p>Movies:</p>
+
+<ul class="movie-list">
+  @for (user of userService.users; track $index) {
+  <li>
+    <a [routerLink]="user.id" class="link">
+      <div class="movie-container">
+        <h2>{{ $index + 1 }}</h2>
+        <h2>{{ user.name }}</h2>
+      </div>
+    </a>
+  </li>
+  }
+</ul>

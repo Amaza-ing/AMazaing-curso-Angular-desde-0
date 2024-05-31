@@ -1,13 +1,11 @@
 import { Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
-import { MovieListComponent } from './pages/movie-list/movie-list.component';
-import { MovieDetailComponent } from './pages/movie-detail/movie-detail.component';
-import { FormPageComponent } from './pages/form-page/form-page.component';
+import { UserListComponent } from './pages/user-list/user-list.component';
+import { UserDetailComponent } from './pages/user-detail/user-detail.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'movies', component: MovieListComponent },
-  { path: 'movies/:movieName', component: MovieDetailComponent },
-  { path: 'create', component: FormPageComponent },
+  { path: 'users', component: UserListComponent },
+  { path: 'users/:id', component: UserDetailComponent },
 ];
