@@ -5,7 +5,7 @@
 <ul class="movie-list">
   @for (user of userService.users; track $index) {
   <li>
-    <a [routerLink]="user.id" class="link">
+    <a [routerLink]="user.id">
       <div class="movie-container">
         <h2>{{ $index + 1 }}</h2>
         <h2>{{ user.name }}</h2>
