@@ -8,15 +8,12 @@ import { ActivatedRoute } from '@angular/router';
   standalone: true,
   imports: [HeaderComponent],
   templateUrl: './user-detail.component.html',
-  styleUrl: './user-detail.component.css'
+  styleUrl: './user-detail.component.css',
 })
 export class UserDetailComponent {
   selectedUser: any;
 
-  constructor(
-    public userService: UserService,
-    private route: ActivatedRoute
-  ) {}
+  constructor(public userService: UserService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
@@ -27,12 +24,11 @@ export class UserDetailComponent {
     this.userService.getUser(id).subscribe({
       next: (data) => {
         console.log(data);
-        this.selectedUser = data;       
+        this.selectedUser = data;
       },
       error: (e) => {
-        console.log(e);        
-      }
-    })
+        console.log(e);
+      },
+    });
   }
-
 }
