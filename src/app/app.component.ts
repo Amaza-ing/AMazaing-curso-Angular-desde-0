@@ -11,9 +11,4 @@ import { Child2Component } from './components/child2/child2.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  name: string = '';
-
-  setName(e: any) {
-    this.name = e;
-  }
 }
