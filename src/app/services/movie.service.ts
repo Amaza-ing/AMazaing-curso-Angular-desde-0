@@ -8,7 +8,18 @@ export class MovieService {
   movies: Movie[];
 
   constructor() {
-    this.movies = [];
+    this.movies = [
+      {
+        name: 'El Señor de los Anillos',
+        duration: 300,
+        director: 'Peter Jackson',
+      },
+      {
+        name: 'La Naranja Mecánica',
+        duration: 120,
+        director: 'Stanley Kubrick',
+      },
+    ];
   }
 
   addMovie(movie: Movie): void {
