@@ -1,4 +1,18 @@
-# MyProject
+
+# Curso de Angular desde 0
+
+El código de ejemplo de cada lección está en una rama diferente, símplemente cambia a la rama que quieras para verlo.
+
+<br /><br />
+
+Curso de Angular: <a>https://www.youtube.com/playlist?list=PLzA2VyZwsq_9cD3JIxBymaIVyef07PJ-y</a>
+
+<br />
+
+### <a>https://www.youtube.com/@AMaza-Ing</a>
+### <a>https://www.amaza-ing.com/</a>
+
+<br/><br/>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
