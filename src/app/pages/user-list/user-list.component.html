@@ -5,12 +5,13 @@
 <ul class="user-list">
   @for (user of userService.users; track $index) {
   <li>
-    <a [routerLink]="user.id.toString()">
-      <div class="user-container">
-        <h2>{{ $index + 1 }}</h2>
-        <h2>{{ user.name }}</h2>
-      </div>
-    </a>
+    <div>
+      <a [routerLink]="user.id.toString()" class="user-link">
+        <h2 class="user-name">{{ user.name }}</h2>
+      </a>
+      <h3 class="user-email">{{ user.email }}</h3>
+      <p class="trash-icon" (click)="deleteUser(user.id)">🗑</p>
+    </div>
   </li>
   }
 </ul>

@@ -1,0 +1,63 @@
+.user-list {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .user-item {
+    width: 300px;
+    height: 150px;
+    background-color: aqua;
+    padding: 20px;
+    position: relative;
+    transition: all 0.4s;
+
+    .user-link {
+      color: black;
+
+      .user-name {
+        margin: 0;
+      }
+    }
+
+    .trash-icon {
+      font-size: 3rem;
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      right: 5px;
+    }
+    .trash-icon:hover {
+      color: orange;
+      cursor: pointer;
+    }
+  }
+  .user-item:hover {
+    transform: scale(1.2);
+    border: 3px solid blue;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .user-list {
+    .user-item {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .user-list {
+    .user-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .user-email {
+        display: none;
+      }
+    }
+  }
+}
