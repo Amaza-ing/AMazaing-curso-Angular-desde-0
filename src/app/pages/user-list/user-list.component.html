@@ -4,7 +4,7 @@
 
 <ul class="user-list">
   @for (user of userService.users; track $index) {
-  <li>
+  <li class="user-item">
     <div>
       <a [routerLink]="user.id.toString()" class="user-link">
         <h2 class="user-name">{{ user.name }}</h2>
