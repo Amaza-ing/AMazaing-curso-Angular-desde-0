@@ -1,3 +1,9 @@
-<h1>Username: {{ userName }}</h1>
-<h2>Number: {{ number }}</h2>
-<input type="text" [(ngModel)]="userName" (input)="addOne()" />
+<h1>Bloque &#64; if - Renderizado dinámico</h1>
+
+@if (condition) {
+<h2>La condición se cumple</h2>
+} @else if (condition2) {
+<h2>La condición 2 se cumple</h2>
+} @else {
+<h2>Las condiciones no se cumplen</h2>
+}

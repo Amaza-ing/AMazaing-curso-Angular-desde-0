@@ -11,10 +11,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  userName: string = 'Adrián';
-  number: number = 0;
-
-  addOne() {
-    this.number++;
-  }
+  condition: boolean = true;
+  condition2: string = "asdf";
 }
