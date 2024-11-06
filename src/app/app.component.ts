@@ -10,5 +10,9 @@ import { HeaderComponent } from './components/header/header.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  userName: string = 'Adrián';
+  number: number = 0;
+
+  addOne() {
+    this.number++;
+  }
 }
