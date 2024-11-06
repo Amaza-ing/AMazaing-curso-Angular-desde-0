@@ -1,9 +1,5 @@
-<h1>Bloque &#64; if - Renderizado dinámico</h1>
+<h1>Bloque &#64; for - Renderizado de listas</h1>
 
-@if (condition) {
-<h2>La condición se cumple</h2>
-} @else if (condition2) {
-<h2>La condición 2 se cumple</h2>
-} @else {
-<h2>Las condiciones no se cumplen</h2>
+@for (movie of movies; track movie) {
+  <p>{{ $index + 1 }} - {{ movie }}</p>
 }

@@ -11,6 +11,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  condition: boolean = true;
-  condition2: string = "asdf";
+  movies: string[] = ["Lord of the Rings", "Star Wars", "Dune"];
 }
