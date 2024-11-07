@@ -19,6 +19,7 @@ export class AppComponent {
   name: FormControl;
   duration: FormControl;
   director: FormControl;
+  sentMsg = "";
 
   constructor() {
     this.name = new FormControl('', Validators.required);
@@ -37,5 +38,6 @@ export class AppComponent {
 
   handleSubmit(): void {
     console.log('Movie created:', this.movieForm.value);
+    this.sentMsg = "Enviado";
   }
 }
