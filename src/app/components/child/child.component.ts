@@ -13,6 +13,8 @@ export class ChildComponent {
 
   msg = input<string>('');
 
-  @Input()
-  person: any;
+  // @Input()
+  // person: any;
+
+  person = input<any>();
 }
