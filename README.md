@@ -9,7 +9,7 @@
   Puedes ver cada rama en <a href="https://github.com/Amaza-ing/AMazaing-curso-Angular-desde-0">este repositorio de GitHub</a>.
 </h4>
 <h4>
-  <a href="https://www.youtube.com/watch?v=WxJ8JDsjy24&list=PLzA2VyZwsq_8nVw1G6L9PehvqSoGjTjsX">¿Cómo clonar todas las ramas en tu ordenador? ↪</a>
+  <a href="https://www.youtube.com/watch?v=WxJ8JDsjy24&list=PLzA2VyZwsq_8nVw1G6L9PehvqSoGjTjsX">¿Cómo clonar todas las ramas en tu ordenador? ▶</a>
 </h4>
 <h4>
   También puedes ver las ramas desde una terminal en Visual Studio Code
