@@ -1,41 +1,54 @@
+<h1>Bienvenidos al curso de Angular de AMazaing</h1>
 
-# Curso de Angular desde 0
+<h3><a href="https://www.youtube.com/playlist?list=PLzA2VyZwsq_9cD3JIxBymaIVyef07PJ-y">Ver este curso en YouTube</a></h3>
 
-El código de ejemplo de cada lección está en una rama diferente, símplemente cambia a la rama que quieras para verlo.
-
-<br /><br />
-
-Curso de Angular: <a>https://www.youtube.com/playlist?list=PLzA2VyZwsq_9cD3JIxBymaIVyef07PJ-y</a>
-
-<br />
-
-### <a>https://www.youtube.com/@AMaza-Ing</a>
-### <a>https://www.amaza-ing.com/</a>
-
-<br/><br/>
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<h3>
+  Este curso está separado por ramas, tienes cada lección y ejemplo en cada rama.
+</h3>
+<h4>
+  Puedes ver cada rama en <a href="https://github.com/Amaza-ing/AMazaing-curso-Angular-desde-0">este repositorio de GitHub</a>.
+</h4>
+<h4>
+  <a href="https://www.youtube.com/watch?v=WxJ8JDsjy24&list=PLzA2VyZwsq_8nVw1G6L9PehvqSoGjTjsX">¿Cómo clonar todas las ramas en tu ordenador? ↪</a>
+</h4>
+<h4>
+  También puedes ver las ramas desde una terminal en Visual Studio Code
+  o el editor de código que utilices escribiendo el siguiente comando:
+</h4>
+  <pre>git branch -a</pre>
+<h4>
+  Puedes moverte a cada rama escribiendo el comando:
+</h4>
+  <pre>git checkout nombre-de-la-rama</pre>
+<h2>Hecho por Adrián Maza</h2>
+<h3>
+  <a href="https://www.youtube.com/@AMaza-Ing" target="_blank">
+    AMazaing
+  </a>
+</h3>
+<h4>Espero que lo disfrutes ;)</h4>
+<div>
+  <h5>
+    <a href="https://www.youtube.com/@AMaza-Ing" target="_blank">
+      YouTube/AMaza-ing
+    </a>
+  </h5>
+  <h5>
+    <a
+      href="https://www.linkedin.com/in/adrian-maza-vazquez/"
+      target="_blank"
+    >
+      LinkedIn/Adrián-Maza
+    </a>
+  </h5>
+  <h5>
+    <a href="https://www.amaza-ing.com/" target="_blank">
+      AMazaing Web
+    </a>
+  </h5>
+  <h5>
+    <a href="https://github.com/Amaza-ing" target="_blank">
+      GitHub/AMaza-ing
+    </a>
+  </h5>
+</div>
