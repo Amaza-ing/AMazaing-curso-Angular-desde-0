@@ -11,6 +11,7 @@ import { ChildComponent } from './components/child/child.component';
 })
 export class AppComponent {
   name: string = "";
+  info = "Info desde el padre";
 
   setName(e: any) {
     this.name = e;
